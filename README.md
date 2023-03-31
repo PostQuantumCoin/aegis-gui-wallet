@@ -7,5 +7,5 @@ Double-click /AEGIS-win32-x64/AEGIS
 
 ## Running on Linux
 ```bash
-bash /AEGIS-linux-x64/AEGIS
+/AEGIS-linux-x64/AEGIS
 ```
