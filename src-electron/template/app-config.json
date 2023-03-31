@@ -1,0 +1,38 @@
+{
+	"lang": "en-US",
+	"connectOtherNode": false,
+	"coreOpt": {
+		"dbDir": "data/blockDb",
+		"minerFeeRatio": "1"
+	},
+	"walletDataPath": {
+		"dbDir": "data/walletFile"
+	},
+	"walletHistoryOpt": {
+		"dbDir": "data/walletHistoryDb"
+	},
+	"rpcOpt": {
+		"hostname": "127.0.0.1",
+		"port": 51978,
+		"auth": {
+			"usr": "demo",
+			"pw": "changeme"
+		},
+		"disable": false
+	},
+	"p2pOpt": {
+		"peerDir": "data/peers",
+		"maxConnect": 256,
+		"listenPort": 51677,
+		"serverDisable": false
+	},
+	"services": {
+		"fullnode": false
+	},
+	"eventLog": {
+		"newBlock": true,
+		"forkBlock": false,
+		"addTx": false,
+		"p2p": true
+	}
+}

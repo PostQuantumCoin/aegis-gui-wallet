@@ -1,0 +1,44 @@
+{
+	"name": "aegis-gui-wallet",
+	"version": "0.0.1",
+	"description": "AEGIS wallet",
+	"productName": "AEGIS",
+	"author": "AEGIS",
+	"moduleResolution": "node",
+	"main": "./src-electron/electron-main.js",
+	"scripts": {
+		"dev": "quasar dev -m electron",
+		"gen-icon": "icongenie generate -p ./gen-icon.json",
+		"build-win": "npm run gen-icon && quasar build -m electron && copyfiles -u 0 ./icon.png ./dist/electron/Packaged/AEGIS-win32-x64",
+		"build-linux": "npm run gen-icon && quasar build -m electron && copyfiles -u 0 ./icon.png ./dist/electron/Packaged/AEGIS-linux-x64 && copyfiles -u 0 -f ./util/*.sh ./dist/electron/Packaged/",
+		"build-debug": "npm run gen-icon && quasar build -m electron --debug"
+	},
+	"dependencies": {
+		"@quasar/extras": "^1.0.0",
+		"aegispqccoin": "git+https://github.com/aegispqc/aegis.git",
+		"lmdb": "2.5.3",
+		"pinia": "^2.0.23",
+		"quasar": "2.11.3",
+		"vue": "^3.0.0",
+		"vue-i18n": "^9.0.0",
+		"vue-router": "^4.0.0"
+	},
+	"devDependencies": {
+		"@intlify/vite-plugin-vue-i18n": "^3.3.1",
+		"@quasar/icongenie": "2.5.4",
+		"@quasar/app-vite": "1.1.3",
+		"autoprefixer": "^10.4.2",
+		"copyfiles": "2.4.1",
+		"electron": "19.0.6",
+		"electron-packager": "^15.5.2",
+		"keyv": "^4.5.0",
+		"rimraf": "3.0.2",
+		"ts-node": "10.9.1",
+		"typescript": "4.9.4"
+	},
+	"engines": {
+		"node": "^18 || ^16 || ^14.19",
+		"npm": ">= 6.13.4",
+		"yarn": ">= 1.21.1"
+	}
+}

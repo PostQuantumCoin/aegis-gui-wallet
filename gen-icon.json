@@ -1,0 +1,37 @@
+{
+	"params": {
+		"icon": "./icon.png",
+		"quality": 12,
+		"skipTrim": false,
+		"padding": [
+			0,
+			0
+		],
+		"include": [
+			"electron"
+		]
+	},
+	"assets": [
+		{
+			"generator": "png",
+			"name": "favicon-{size}x{size}.png",
+			"folder": "public/icons",
+			"sizes": [ 16, 32, 96, 128 ]
+		},
+		{
+			"generator": "ico",
+			"name": "favicon.ico",
+			"folder": "public"
+		},
+		{
+			"generator": "icns",
+			"name": "icon.icns",
+			"folder": "src-electron/icons"
+		},
+		{
+			"generator": "ico",
+			"name": "icon.ico",
+			"folder": "src-electron/icons"
+		}
+	]
+}

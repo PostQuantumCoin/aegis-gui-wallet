@@ -1,0 +1,97 @@
+:root {
+	--q-negative: #ff4c5f !important;
+
+	--ags-startup-progress: #2a333a !important;
+	--ags-text-obscure: #dcdcdb !important;
+	--ags-text-obvious: #ebae30 !important;
+	--ags-bg-c1: #241b2c !important;
+	--ags-bt-c1: #d1c4e9 !important;
+	--ags-bt-c3: #9575cd !important;
+	--ags-bt-c4: #4527a0 !important;
+	--ags-value-c1: #dee4ff !important;
+	--ags-card-c1: #ffffff0f !important;
+	--ags-card-c2: #ffffff37 !important;
+	--ags-text-c1: #acb3d6 !important;
+}
+
+.text-card {
+	color: var(--ags-text-c1);
+}
+
+.bt-c1 {
+	color: var(--ags-bt-c1);
+}
+
+.text-obvious {
+	color: var(--ags-text-obvious);
+}
+
+.text-obscure {
+	color: var(--ags-text-obscure);
+}
+
+.text-error {
+	color: var(--q-negative);
+}
+
+.bg-blur {
+	backdrop-filter: blur(5px);
+}
+
+.bg-footer {
+	background: transparent;
+	border-style: solid;
+	border-width: 1px 0 0 0;
+	border-color: var(--ags-text-obvious);
+}
+
+.bg-container {
+	background-color: #241b2c;
+}
+
+.bg-startup-progress {
+	background-color: var(--ags-startup-progress);
+}
+
+.bg-container-img::before {
+	content: "";
+	background-image: url(../assets/logo-vertical.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	bottom: 0px;
+	left: 0px;
+	opacity: 0.4;
+	filter: blur(50px);
+}
+
+.bg-unset {
+	background: unset !important;
+}
+
+.q-layout__shadow::after {
+	box-shadow: unset !important;
+}
+
+.hover-button {
+	position: relative;
+	cursor: pointer;
+}
+
+.hover-button::before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	color: #ffc107;
+}
+
+.hover-button:hover::before {
+	background: currentColor;
+	opacity: 0.15;
+}
