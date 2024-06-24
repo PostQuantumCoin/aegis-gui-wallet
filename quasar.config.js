@@ -21,7 +21,7 @@ module.exports = configure(function () {
 		build: {
 			target: {
 				browser: ['es2020', 'chrome104'],
-				node: 'node16'
+				node: 'node18'
 			},
 			vueRouterMode: 'hash',
 			vitePlugins: [
