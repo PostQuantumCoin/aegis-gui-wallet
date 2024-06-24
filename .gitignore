@@ -703,3 +703,4 @@ app-config.json
 public/icons/
 **/favicon.ico
 src-electron/icons/
+data
