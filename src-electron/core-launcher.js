@@ -54,7 +54,7 @@ var exiting = false;
 	task.eventEmit.on('newBlock', (m) => {
 		process.send({
 			type: 'newBlock',
-			data: m.toString('hex')
+			data: JSON.stringify(m)
 		});
 	});
 	task.eventEmit.on('forkBlock', (m) => {
