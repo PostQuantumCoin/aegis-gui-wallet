@@ -303,8 +303,8 @@
 			});
 			window.electronAPI.newBlockListener(
 				function (event, data) {
-					this.updateBlockView(data);
-					this.updateBlockHeight(data);
+					this.updateBlockView();
+					this.updateBlockHeight();
 				}.bind(this)
 			);
 			window.electronAPI.addTxListener(
