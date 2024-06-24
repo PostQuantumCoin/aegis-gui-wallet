@@ -1,6 +1,6 @@
 # AEGIS GUI Wallet
 
-A Project for the aegisPQC
+An aegisPQC project
 
 ## Running on Windows
 Double-click /AEGIS-win32-x64/AEGIS
