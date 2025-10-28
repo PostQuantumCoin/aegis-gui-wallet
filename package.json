@@ -15,7 +15,7 @@
 	},
 	"dependencies": {
 		"@quasar/extras": "^1.0.0",
-		"aegispqccoin": "git+https://github.com/aegispqc/aegis.git#v0.1.2",
+		"aegispqccoin": "git+https://github.com/PostQuantumCoin/aegis.git#v0.1.3",
 		"lmdb": "2.5.3",
 		"pinia": "^2.0.23",
 		"quasar": "2.11.3",
