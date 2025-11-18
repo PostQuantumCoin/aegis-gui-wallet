@@ -35,7 +35,9 @@
 		"keyv": "^4.5.0",
 		"rimraf": "3.0.2",
 		"ts-node": "10.9.1",
-		"typescript": "4.9.4"
+		"@types/node": "17.0.5",
+		"typescript": "4.5.5",
+		"@types/minimatch": "^5.1.2"
 	},
 	"engines": {
 		"node": "^18 || ^16 || ^14.19",
